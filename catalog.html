@@ -43,19 +43,42 @@
                   </ul>
               </div>
           </div>
-          
-          <div class="main-sort">
-              <div class="container">
-                 <!-- надо решить нужен тут див или нет -->
-                  <span class="main-sort_span">Фильтр:</span>
-                  <span class="main-sort_span">Сортировка:</span>
-                  <a href="#" class="main-sort_a">По цене</a>
-                  <a href="#" class="main-sort_a">По типу</a>
-                  <a href="#" class="main-sort_a">По популярности</a>
+
+          <div class="main-filter">
+            <!-- надо решить нужен тут див или нет -->
+            <span class="main-sort_span">Фильтр:</span>
+                 
+            <form action="#" class="main-sort">
+                <span class="main-sort_cost sort-title">Стоимость</span>
+                <input type="range" min="0" max="10000" step="1" value="5000" name="cost">
+                
+                <span class="main-sort_color sort-title">Цвет</span>
+                <input type="checkbox" id="main-sort_black" name="main-sort_black" class="sort-color"><label for="main-sort_black">Черный</label>
+                <input type="checkbox" id="main-sort_white" name="main-sort_white" class="sort-color"><label for="main-sort_white">Белый</label>
+                <input type="checkbox" id="main-sort_blue" name="main-sort_blue" class="sort-color"><label for="main-sort_blue">Голубой</label>
+                <input type="checkbox" id="main-sort_red" name="main-sort_red" class="sort-color"><label for="main-sort_red">Красный</label>
+                <input type="checkbox" id="main-sort_pink" name="main-sort_pink" class="sort-color"><label for="main-sort_pink">Розовый</label>
+                
+                <span class="main-sort_color sort-title">Цвет</span>
+                <input type="checkbox" id="main-sort_have" name="main-sort_have" class="sort-bluetooth"><label for="main-sort_black">Есть</label>
+                <input type="checkbox" id="main-sort_havent" name="main-sort_havent" class="sort-bluetooth"><label for="main-sort_black">Нет</label>
+                
+                <input type="submit" class="main_a">
+            </form>
                   
-                  <!-- стрелки вниз и вверх это кнопки, либо меняются при выборе сортировки? -->
-              </div>
           </div>
+            
+          <div class="main-aside">
+              <span class="main-sort_span">Сортировка:</span>
+              <a href="#" class="main-sort_a">По цене</a>
+              <a href="#" class="main-sort_a">По типу</a>
+              <a href="#" class="main-sort_a">По популярности</a>
+                  
+              <!-- стрелки вниз и вверх это кнопки, либо меняются при выборе сортировки? -->
+              <button class="main-sort_btn">Наименьшее наверху</button>
+              <button class="main-sort_btn">Наибольшее наверху</button>
+          </div>
+          
       </main>
     </body>
 </html>
