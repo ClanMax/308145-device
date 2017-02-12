@@ -12,6 +12,7 @@
               <nav class="header-navigation_top">
                  <form action="" action="post">
                      <input type="text" placeholder="Поиск по сайту" class="search-form">
+                     <input type="submit" value="Найти" class="search-form_submit">
                  </form>
                   <ul>
                       <li><a href="#" class="header_name">Валентин Петухов</a></li>
@@ -49,20 +50,25 @@
             <span class="main-sort_span">Фильтр:</span>
                  
             <form action="#" class="main-sort">
-                <span class="main-sort_cost sort-title">Стоимость</span>
-                <input type="range" min="0" max="10000" step="1" value="5000" name="cost">
+                <fieldset>
+                    <legend  class="main-sort_cost sort-title">Стоимость</legend>
+                    <input type="range" min="0" max="10000" step="1" value="5000" name="cost">
+                </fieldset>
                 
-                <span class="main-sort_color sort-title">Цвет</span>
-                <input type="checkbox" id="main-sort_black" name="main-sort_black" class="sort-color"><label for="main-sort_black">Черный</label>
-                <input type="checkbox" id="main-sort_white" name="main-sort_white" class="sort-color"><label for="main-sort_white">Белый</label>
-                <input type="checkbox" id="main-sort_blue" name="main-sort_blue" class="sort-color"><label for="main-sort_blue">Голубой</label>
-                <input type="checkbox" id="main-sort_red" name="main-sort_red" class="sort-color"><label for="main-sort_red">Красный</label>
-                <input type="checkbox" id="main-sort_pink" name="main-sort_pink" class="sort-color"><label for="main-sort_pink">Розовый</label>
+                <fieldset>
+                    <legend class="main-sort_color sort-title">Цвет</legend>
+                    <input type="checkbox" id="main-sort_black" name="main-sort_black" class="sort-color"><label for="main-sort_black">Черный</label>
+                    <input type="checkbox" id="main-sort_white" name="main-sort_white" class="sort-color"><label for="main-sort_white">Белый</label>
+                    <input type="checkbox" id="main-sort_blue" name="main-sort_blue" class="sort-color"><label for="main-sort_blue">Голубой</label>
+                    <input type="checkbox" id="main-sort_red" name="main-sort_red" class="sort-color"><label for="main-sort_red">Красный</label>
+                    <input type="checkbox" id="main-sort_pink" name="main-sort_pink" class="sort-color"><label for="main-sort_pink">Розовый</label>
+                </fieldset>
                 
-                <span class="main-sort_color sort-title">Цвет</span>
-                <input type="checkbox" id="main-sort_have" name="main-sort_have" class="sort-bluetooth"><label for="main-sort_black">Есть</label>
-                <input type="checkbox" id="main-sort_havent" name="main-sort_havent" class="sort-bluetooth"><label for="main-sort_black">Нет</label>
-                
+                <fieldset>
+                    <legend class="main-sort_color sort-title">Bluetooth</legend>
+                    <input type="checkbox" id="main-sort_have" name="main-sort_have" class="sort-bluetooth"><label for="main-sort_black">Есть</label>
+                    <input type="checkbox" id="main-sort_havent" name="main-sort_havent" class="sort-bluetooth"><label for="main-sort_black">Нет</label>                    
+                </fieldset>
                 <input type="submit" class="main_a">
             </form>
                   
