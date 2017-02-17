@@ -1,7 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     color: #464646;
     font-family: "Open Sans", Arial;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
+}
+
+
+.header {
+    padding-top: 40px;
+    background-color: #f0c52e;
+    opacity: 0.5;
+}
+
+.container {
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.header-navigation_top {
+    display: flex;
+    padding-top: 53px;
+    padding-left: 99px;
+    padding-right: 99px;
+}
+
+.header-search {
+    display: flex;    
+}
+
+.search-form {
+    width: 108px;
+    height: 15px;
+    opacity: 0.3;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 36px;
+}
+
+.search-form:focus {
+    outline: none;
+}
+
+.search-form_submit {
+    margin-right: 20px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/search-ico.png");
+    background-repeat: no-repeat;
+    border: 0 none;
+}
+
+.header-navigation_top ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-left: 393px;
+    list-style-type: none;
+}
+
+.header-navigation_top li:nth-child(2) {
+    padding-left: 218px;
+}
+
+.header-navigation_top li:nth-child(3) {
+    padding-left: 41px;
+}
+
+.header-navigation_bottom ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
